@@ -1,22 +1,17 @@
 *****************************************************************
-* UvA_Trilearn 2003 - University of Amsterdam, The Netherlands  *
-* Base code version of the RoboCup-2003 World Champion          *
-* Created by:           Jelle Kok                               *
-* Research Coordinator: Nikos Vlassis                           * 
-* Team Coordinator:     Frans Groen                             *
-* Copyright 2000-2001.  Jelle Kok and Remco de Boer             *
-* Copyright 2001-2002.  Jelle Kok                               *
-* Copyright 2002-2003.  Jelle Kok                               *
-* All rights reserved.                                          *
+* AuRevoirUFABC 2017 - Universidade Federal do ABC, Brasil      *
+* Team:           Mateus Andrade                                *
+*                 André Marques                                 *
+*                 Brenda Miura                                  *
+* Team Coordinator:     Luis Celiberto                          *
+* All rights reserved                                           *
 *****************************************************************
-
-Last update: 30-10-2003
 
 General information
 -------------------
 
  This directory contains parts of the source files and configuration
- files for the UvA Trilearn 2003 soccer simulation team which won the
+ files for the AuRevoirUFABC based in UvA Trilearn 2003 soccer simulation team which won the
  RoboCup-2003 Simulation League in Padova.  The released code contains
  our low-level and intermediate level implementation
  (agent-environment synchronization method, world model, player
@@ -91,36 +86,6 @@ Changes
  We tried to keep the code backward-compatibility with the previous
  release, but we won't make any promises. Please report when you
  encounter any major problems.
-
-
-Acknowledgements
-----------------
-
- The team has initially been built from scratch in 2001 for the
- master's graduation project of Jelle Kok and Remco de Boer at the
- University of Amsterdam. Thereafter, Jelle Kok continued the work
- under supervision of Nikos Vlassis.
-
- Although we have not copied any code from other teams, we have looked
- at some of their methods and used this knowledge for our own
- implementation. For this we would like to thank the following teams:
-
-- FC Portugal 2000: for their team formation and Simple Portugal team
-- CMUnited-99     : for their interception and message parsing methods
-- Cyberoos 2000   : for the description of their synchronization method
-- Essex Wizards   : for the description of their multi-threaded architecture
-
-
-More information
-----------------
- 
- More information can be found at the official UvA Trilearn website:
-
-   http://www.science.uva.nl/~jellekok/robocup/index.html
- 
- or contact:
- 
-   Jelle Kok     (jellekok@science.uva.nl)
 
 
 Global overview of classes
