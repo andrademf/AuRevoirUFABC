@@ -74,8 +74,16 @@ SoccerCommand Player::deMeer5(  )
         VecPosition posGoal( PITCH_LENGTH/2.0,
                              (-1 + 2*(WM->getCurrentCycle()%2)) * 
                              0.4 * SS->getGoalWidth() );
-        soc = kickTo( posGoal, SS->getBallSpeedMax() ); // kick maximal
-        Log.log( 100, "take kick off" );        
+
+        double dDist = posAgent.getDistanceTo( posGoal );
+        
+        if (dDist < 1.0){
+          soc = kickTo( posGoal, SS->getBallSpeedMax() ); // kick maximal
+          Log.log( 100, "take kick off MFA" );
+        } else {
+          soc = kickBallCloseToBody(WM->getAgentGlobalBodyAngle(), 0.1);//kickTo( posGoal, PASS_NORMAL );
+          Log.log( 100, "take kick close to body MFA" );        
+        }
       }
       else
       {
@@ -114,8 +122,25 @@ SoccerCommand Player::deMeer5(  )
 		VecPosition posGoal( PITCH_LENGTH/2.0,
 							(-1 + 2*(WM->getCurrentCycle()%2)) * 0.4 * SS->getGoalWidth() );
 			
-		
-		soc = kickTo( posGoal, SS->getBallSpeedMax() ); // kick maxima
+      double dDist = posAgent.getDistanceTo( posGoal );
+      
+      if (dDist < 20.0){
+          soc = kickTo( posGoal, SS->getBallSpeedMax() ); // kick maximal
+          Log.log( 101, "take kick off MFA" );
+        } else {
+          soc = turnBodyToObject( OBJECT_BALL );
+          ACT->putCommandInQueue( soc );
+
+          AngDeg angBody = WM->getAgentGlobalBodyAngle();
+          AngDeg angToBall = ( posAgent - posBall ).getDirection();
+          AngDeg angToBallN = VecPosition::normalizeAngle( angToBall - angBody );
+
+          AngDeg angToGoal = ( posBall - posGoal ).getDirection();
+          AngDeg angKick = VecPosition::normalizeAngle( angToGoal - angBody + 180 );
+          soc = kickBallCloseToBody(angKick, 1.0); //kickTo( posGoal, PASS_NORMAL );
+          Log.log( 101, "take kick close to body MFA (%f %f %f)", angBody, angToGoal, angKick);        
+      }
+
       ACT->putCommandInQueue( soc );
       ACT->putCommandInQueue( turnNeckToObject( OBJECT_BALL, soc ) );
       Log.log( 100, "kick ball" );

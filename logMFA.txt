@@ -1,0 +1,65 @@
+*****************************************************************
+* AuRevoirUFABC 2017 - Universidade Federal do ABC, Brasil      *
+* Team:           Mateus Andrade                                *
+*                 André Marques                                 *
+*                 Bruna Miura                                   *
+* Team Coordinator:     Luis Celiberto                          *
+* All rights reserved                                          *
+*****************************************************************
+[1] 9222
+[2] 9224
+[3] 9226
+[4] 9228
+[5] 9230
+[6] 9232
+[7] 9234
+[8] 9236
+[9] 9238
+[10] 9240
+[11] 9242
+[12] 9249
+Shutting down player 7
+   Number of holes: 0 (-nan)
+   Teammates seen: 0 (-nan)
+   Opponents seen: 0 (-nan)
+Shutting down player 6
+   Number of holes: 0 (-nan)
+   Teammates seen: 0 (-nan)
+   Opponents seen: 0 (-nan)
+Shutting down player 2
+   Number of holes: 0 (-nan)
+   Teammates seen: 0 (-nan)
+   Opponents seen: 0 (-nan)
+Shutting down player 5
+   Number of holes: 0 (-nan)
+   Teammates seen: 0 (-nan)
+   Opponents seen: 0 (-nan)
+Shutting down player 8
+   Number of holes: 0 (-nan)
+   Teammates seen: 0 (-nan)
+   Opponents seen: 0 (-nan)
+Shutting down player 11
+   Number of holes: 0 (-nan)
+   Teammates seen: 0 (-nan)
+   Opponents seen: 0 (-nan)
+Shutting down player 1
+   Number of holes: 0 (-nan)
+   Teammates seen: 0 (-nan)
+   Opponents seen: 0 (-nan)
+Shutting down player 9
+   Number of holes: 0 (-nan)
+   Teammates seen: 0 (-nan)
+   Opponents seen: 0 (-nan)
+Shutting down player 3
+   Number of holes: 0 (-nan)
+   Teammates seen: 0 (-nan)
+   Opponents seen: 0 (-nan)
+Shutting down player 4
+   Number of holes: 0 (-nan)
+   Teammates seen: 0 (-nan)
+   Opponents seen: 0 (-nan)
+Shutting down player 10
+   Number of holes: 0 (-nan)
+   Teammates seen: 0 (-nan)
+   Opponents seen: 0 (-nan)
+Shutting down coach

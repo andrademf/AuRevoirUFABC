@@ -146,9 +146,9 @@ void Player::mainLoop( )
           case PT_DEFENDER_CENTRAL:
           case PT_DEFENDER_WING:    soc = defenderMainLoop( );   break;
           case PT_MIDFIELDER_CENTER:
-          case PT_MIDFIELDER_WING:  soc = midfielderMainLoop( ); break;
+          case PT_MIDFIELDER_WING:  //soc = midfielderMainLoop( ); break;
           case PT_ATTACKER:
-          case PT_ATTACKER_WING:    soc = attackerMainLoop( );   break;
+          case PT_ATTACKER_WING:    //soc = attackerMainLoop( );   break;
           case PT_ILLEGAL:
           default: break;
         }
