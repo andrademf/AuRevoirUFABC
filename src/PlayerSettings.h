@@ -125,10 +125,44 @@ class PlayerSettings : public GenericValues
                                       for the y position in a strategic
                                       position. */
 
+  int dtatica1_defender;
+  int dtatica2_defender;
+  int dtatica3_defender;
+  int dtatica4_defender;
+  int dtatica5_defender;
+  int dtatica1_midfielder;
+  int dtatica2_midfielder;
+  int dtatica3_midfielder;
+  int dtatica4_midfielder;
+  int dtatica5_midfielder;
+  int dtatica1_attacker;
+  int dtatica2_attacker;
+  int dtatica3_attacker;
+  int dtatica4_attacker;
+  int dtatica5_attacker;
+
 public:
   PlayerSettings( );
 
   // all standard get and set methods
+
+  int getPlayerTatica1Defender        (          ) const;
+  int getPlayerTatica2Defender        (          ) const;
+  int getPlayerTatica3Defender        (          ) const;
+  int getPlayerTatica4Defender        (          ) const;
+  int getPlayerTatica5Defender        (          ) const;
+
+  int getPlayerTatica1Midfielder        (          ) const;
+  int getPlayerTatica2Midfielder        (          ) const;
+  int getPlayerTatica3Midfielder        (          ) const;
+  int getPlayerTatica4Midfielder        (          ) const;
+  int getPlayerTatica5Midfielder        (          ) const;
+
+  int getPlayerTatica1Attacker        (          ) const;
+  int getPlayerTatica2Attacker        (          ) const;
+  int getPlayerTatica3Attacker        (          ) const;
+  int getPlayerTatica4Attacker        (          ) const;
+  int getPlayerTatica5Attacker        (          ) const;
 
   double getPlayerConfThr        (          ) const;
   bool   setPlayerConfThr        ( double d );

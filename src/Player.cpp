@@ -229,19 +229,19 @@ SoccerCommand Player::goalieMainLoop( )
 /*! This is the main decision loop for a defender. */
 SoccerCommand Player::defenderMainLoop( )
 {
-  return deMeer5() ;
+  return deMeer5_defender() ;
 }
 
 /*! This is the main decision loop for a midfielder. */
 SoccerCommand Player::midfielderMainLoop( )
 {
-  return deMeer5() ;
+  return deMeer5_midfielder() ;
 }
 
 /*! This is the main decision loop for an agent. */
 SoccerCommand Player::attackerMainLoop( )
 {
-  return deMeer5() ;
+  return deMeer5_attacker() ;
 }
 
 /*! This method returns the position to move in case of a dead ball situation.

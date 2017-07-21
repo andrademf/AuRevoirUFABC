@@ -115,7 +115,9 @@ public:
   bool          executeStringCommand      ( char *str                        );
 
   // simple teams (PlayerTeams.cpp)
-  SoccerCommand deMeer5                   (                                  );
+  SoccerCommand deMeer5_defender                   (                                  );
+  SoccerCommand deMeer5_midfielder                   (                                  );
+  SoccerCommand deMeer5_attacker                   (                                  );
   SoccerCommand deMeer5_goalie            (                                  );
   
 

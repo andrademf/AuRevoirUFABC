@@ -55,7 +55,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /*! This method initializes all client settings and adds these to the generic
     values class with the effect that they can referenced by their textual
     name. */
-PlayerSettings::PlayerSettings( ) : GenericValues("PlayerSettings", 27)
+PlayerSettings::PlayerSettings( ) : GenericValues("PlayerSettings", 42) //antigo: 27
 {
   dPlayerConfThr         = 0.88; // threshold below player info is illegal
   dPlayerHighConfThr     = 0.92; // threshold above which player info is high
@@ -86,6 +86,22 @@ PlayerSettings::PlayerSettings( ) : GenericValues("PlayerSettings", 27)
   dMaxYPercentage        = 0.8;  // max y in strat. pos (percentage of field)
 
   // add all the settings and link text string to variable
+  addSetting( "tatica1_defender"     , &dtatica1_defender,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica2_defender"     , &dtatica2_defender,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica3_defender"     , &dtatica3_defender,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica4_defender"     , &dtatica4_defender,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica5_defender"     , &dtatica5_defender,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica1_midfielder"     , &dtatica1_midfielder,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica2_midfielder"     , &dtatica2_midfielder,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica3_midfielder"     , &dtatica3_midfielder,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica4_midfielder"     , &dtatica4_midfielder,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica5_midfielder"     , &dtatica5_midfielder,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica1_attacker"     , &dtatica1_attacker,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica2_attacker"     , &dtatica2_attacker,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica3_attacker"     , &dtatica3_attacker,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica4_attacker"     , &dtatica4_attacker,  GENERIC_VALUE_INTEGER );
+  addSetting( "tatica5_attacker"     , &dtatica5_attacker,  GENERIC_VALUE_INTEGER );
+
   addSetting( "player_conf_thr"     , &dPlayerConfThr,  GENERIC_VALUE_DOUBLE );
   addSetting( "player_high_conf_thr", &dPlayerHighConfThr,
                                                         GENERIC_VALUE_DOUBLE );
@@ -122,6 +138,91 @@ PlayerSettings::PlayerSettings( ) : GenericValues("PlayerSettings", 27)
   addSetting( "initial_formation"  , &iInitialFormation,GENERIC_VALUE_INTEGER);
   addSetting( "max_y_percentage"   , &dMaxYPercentage,  GENERIC_VALUE_DOUBLE );
 
+}
+
+
+/*! This method returns the confidence threshold below which player information
+    is assumed illegal
+   \return player confidence threshold */
+int PlayerSettings::getPlayerTatica1Defender( ) const
+{
+  return dtatica1_defender;
+}
+
+int PlayerSettings::getPlayerTatica2Defender( ) const
+{
+  return dtatica2_defender;
+}
+
+int PlayerSettings::getPlayerTatica3Defender( ) const
+{
+  return dtatica3_defender;
+}
+
+int PlayerSettings::getPlayerTatica4Defender( ) const
+{
+  return dtatica4_defender;
+}
+
+int PlayerSettings::getPlayerTatica5Defender( ) const
+{
+  return dtatica5_defender;
+}
+
+
+
+
+int PlayerSettings::getPlayerTatica1Attacker( ) const
+{
+  return dtatica1_attacker;
+}
+
+int PlayerSettings::getPlayerTatica2Attacker( ) const
+{
+  return dtatica2_attacker;
+}
+
+int PlayerSettings::getPlayerTatica3Attacker( ) const
+{
+  return dtatica3_attacker;
+}
+
+int PlayerSettings::getPlayerTatica4Attacker( ) const
+{
+  return dtatica4_attacker;
+}
+
+int PlayerSettings::getPlayerTatica5Attacker( ) const
+{
+  return dtatica5_attacker;
+}
+
+
+
+
+int PlayerSettings::getPlayerTatica1Midfielder( ) const
+{
+  return dtatica1_midfielder;
+}
+
+int PlayerSettings::getPlayerTatica2Midfielder( ) const
+{
+  return dtatica2_midfielder;
+}
+
+int PlayerSettings::getPlayerTatica3Midfielder( ) const
+{
+  return dtatica3_midfielder;
+}
+
+int PlayerSettings::getPlayerTatica4Midfielder( ) const
+{
+  return dtatica4_midfielder;
+}
+
+int PlayerSettings::getPlayerTatica5Midfielder( ) const
+{
+  return dtatica5_midfielder;
 }
 
 /*! This method returns the confidence threshold below which player information
